@@ -1,0 +1,248 @@
+/* @font-face{
+    font-family: 'poppins';
+    src: url('../font/Poppins-BoldItalic.ttf');
+} */
+
+@font-face {
+    font-family: 'poppins';
+    src: url('../font/poppins/Poppins-Black.ttf');
+}
+
+@font-face {
+    font-family: 'dancing';
+    src: url('../font/dancing/DancingScript-VariableFont_wght.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: aqua;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navLinks ul{
+    /* .navLinks ul also called descendant selector/child 
+    selector. And effect navLinks ka ul me karega*/
+
+    /* display flex: side by side 
+    lane ke liye use hua hai */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navLinks ul li{
+    /* list-style: none bullet ko hatane 
+    ke liye use hua hai */
+    list-style: none;
+
+    /* space chahiye unlog ke beech me. So margin is used. 
+    top-bottom is 0 and two side se 10px gapping*/
+    margin: 0 10px;
+}
+.navLinks ul li a{
+    text-decoration: none;
+    /* 10px top-bottom ka hai and 0 left-right ka hai */
+    padding: 10px 0;
+    color: brown;
+    font-family: 'poppins',serif;
+}
+.navbar_brand a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'dancing',serif;
+}
+/* banner */
+.banner{
+    /* height se banner ka size barega */
+    /* height: 100vh; */
+    height: 60vh;
+    background-image: url('../image/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+}
+
+.banner_content h1{
+    font-size: 50px;
+    color: orangered;
+}
+.banner_content p{
+    color: white;
+}
+.about{
+    /* padding is given for 4 sides gap */
+    padding: 100px;
+    background-color: rgb(227, 229, 231);
+}
+.section_heading{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.aboutParts{
+    /* display flex se automatic 2 sides me chala ayega */
+    display: flex;
+    justify-content: space-between;
+}
+.aboutImage{
+   width: 35%;
+}
+.aboutImage img{
+    width: 100%;
+    /* border-radius used for circle shaped */
+    border-radius: 50px;
+}
+.aboutText{
+    width: 60%;
+}
+.aboutText p{
+    /*  line-height is used for gapping
+    in between the paragraph ke beech me */
+    line-height: 25px;
+}
+.services{
+    padding: 100px;
+    background-color: rgb(227, 229, 231);
+}
+.section_heading{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+/* .servicesParts{
+    display: flex;
+    justify-content: space-between;
+} */
+.serviceImage{
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+    
+    /* conatiner width: 100% dene se sara images
+    ka size aek jesa ho gaya hai */
+    width: 100%;
+}
+.serviceImage Image1 img{
+    width: 100%;
+    display: flex;
+    border-radius: 50px;
+}
+.serviceImage Image2 img{
+    width: 100%;
+    display: flex;
+    border-radius: 50px;
+}
+.serviceImage Image3 img{
+    width: 100%;
+    display: flex;
+    border-radius: 50px;
+}
+.serviceImage Image4 img{
+    width: 100%;
+    display: flex;
+    border-radius: 50px;
+}
+.aboutText1 p{
+    text-align: center;
+    padding: 20px;
+}
+.contact{
+    background-image: url('../image/background.png');
+    text-align: center;
+    padding: 100px;
+    /* background-color: rgb(227, 229, 231); */
+}
+.section_heading{
+    width: 100%;
+    font-size: 35px;
+    /* padding: 100px; */
+    /* background-size: cover; */
+    /* line-height: 20px; line-height is for text*/
+}
+input[type='Submit']{
+    width: 25%;
+    padding: 5px;
+    background-color:rgb(185, 181, 192);
+}
+
+/* ::placeholder{
+    color: black;
+} */
+
+/* input{
+    display: block;
+} */
+
+/* .Contact{
+    padding: 100px;
+    background-color: rgb(227, 229, 231);
+}
+.aboutText2{
+    text-align: center;
+    font-size: 20px;
+}
+.aboutText2 p{
+    text-align: center;
+    padding: 20px;
+}
+.companyDetails{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.companyDetails Image1 img{
+    width: 100%;
+    display: flex;
+    border-radius: 50px;
+}
+.companyDetails h5{
+    font-size: 20px;
+}
+.companyDetails h6{
+    font-size: 20px;
+}
+
+.companyDetails Image2 img{
+    width: 100%;
+    display: flex;
+    border-radius: 50px;
+}
+.companyDetails Image3 img{
+    width: 100%;
+    display: flex;
+    border-radius: 50px;
+} */
+
+.upperFooter{
+    padding: 50px 100px;
+    background-color: darkblue;
+}
+.upperFooter .footerParts{
+    display: flex;
+    justify-content: space-between;
+}
+.footerParts span{
+    font-size: 40px;
+    color: yellow;
+}
+.social_icons{
+    display: flex;
+    justify-content: flex-end;
+}
+.social_icons a{
+    display: inline-block;
+    font-size: 30px;
+    padding: 10px;
+    margin: 0 5px;
+    color: yellow;
+}
